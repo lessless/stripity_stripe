@@ -51,7 +51,7 @@ defmodule Stripe do
   Returns string
   """
   def process_url(endpoint) do
-    "https://api.stripe.com/v1/" <> endpoint
+    Application.get_env(:stripity_stripe, :base_api_url) <> endpoint
   end
 
   @doc """

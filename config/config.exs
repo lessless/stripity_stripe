@@ -10,3 +10,6 @@ config :exvcr, [
     ]
   ]
 ]
+
+config :stripity_stripe,
+  base_api_url: "https://api.stripe.com/v1/"
